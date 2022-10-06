@@ -13,9 +13,9 @@ const send_email_nodemailer = async (req, res) => {
         res.end();
     }
 
-    // block request which is not a post method
+    // block requests which is not a post method
     if (method !== 'POST') {
-        res.write(JSON.stringify({ success: false, msg: `Only POST methods are allowed` }));
+        res.write(JSON.stringify({ success: false, msg: `Only POST method is allowed` }));
         res.end();
     }
 
@@ -46,7 +46,6 @@ const send_email_nodemailer = async (req, res) => {
     try {
         transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
-                console.log(error);
                 res.write(JSON.stringify({ success: false, msg: error }));
                 res.end();
             } else {
