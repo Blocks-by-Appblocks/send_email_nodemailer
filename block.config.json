@@ -1,13 +1,1 @@
-{
-  "name": "send_email_nodemailer",
-  "type": "function",
-  "source": {
-    "https": "https://github.com/Blocks-by-Appblocks/send_email_nodemailer",
-    "ssh": "git@github.com:Blocks-by-Appblocks/send_email_nodemailer.git"
-  },
-  "language": "nodejs",
-  "start": "node index.js",
-  "build": "",
-  "postPull": "npm i",
-  "standAloneBlock": true
-}
+{"name":"nodemailer_app","type":"function","source":{"https":"https://github.com/Aashiq-Otp/nodemailer_app","ssh":"git@github.com:Aashiq-Otp/nodemailer_app.git"},"language":"nodejs","start":"node index.js","build":"","postPull":"npm i","standAloneBlock":true,"isFork":true}
